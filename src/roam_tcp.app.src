@@ -1,0 +1,18 @@
+{application, roam_tcp,
+ [{description, "An OTP application"},
+  {vsn, "0.1.0"},
+  {registered, [roam_tcp_sup]},
+  {mod, {roam_tcp_app, []}},
+  {applications,
+   [kernel,
+    stdlib
+   ]},
+  {env,[]},
+  {modules, [roam_tcp_app,
+             roam_tcp_sup,
+             roam_tcp_server
+            ]},
+
+  {licenses, ["Apache 2.0"]},
+  {links, []}
+ ]}.
